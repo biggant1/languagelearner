@@ -32,7 +32,7 @@ function Game(props) {
     e.preventDefault()
     let val = e.target[0].value
     e.target[0].value = ""
-    if(japaneseToEnglish[char].toLowerCase() !== val) {
+    if(japaneseToEnglish[char] !== val.toLowerCase()) {
       setShake(1)
       if(wrong === 2) {
         setMnenomic(`../../Mnenomic/${japaneseToEnglish[char]}.png`)
