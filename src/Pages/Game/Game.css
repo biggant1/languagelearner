@@ -11,7 +11,7 @@
 .gameMenu {
     display: inline-block;
     text-align: center;
-    width: 20%;
+    width: max(300px, 20%);
     height: 50vh;
     margin-top: 10vh;
 }
