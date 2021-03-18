@@ -36,7 +36,6 @@ function Game(props) {
       setShake(1)
       if(wrong === 2) {
         setMnenomic(`../../Mnenomic/${japaneseToEnglish[char]}.png`)
-        return setWrong(0)
       }
       
       return setWrong(wrong + 1);
@@ -44,6 +43,7 @@ function Game(props) {
 
     setCorrect(correct + 1)
     setChar(charSet[genRan()])
+    setWrong(0)
     setMnenomic("")
   }
   
